@@ -67,6 +67,42 @@ p {
     font-size: 24px !important;
 }
 
+.pseudo::after {
+    content: " Frontend Simplified"
+}
+
+.pseudo2:hover {
+    background-color: aqua;
+}
+
+div {
+    transition: background-color 300ms;
+}
+
+.pseudo3:hover {
+    background-color: aqua;
+}
+
+button {
+    
+    transition: all 300ms;
+}
+
+.button1:hover {
+    animation: float 2000mx infinite alternate-reverse;
+    background-color: black;
+    color: white;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
 @media (max-width: 768){
     p {
         font-size: 24px;
